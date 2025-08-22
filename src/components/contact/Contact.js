@@ -74,7 +74,7 @@ function Contact() {
                     <label for="msg">Write your messages here</label>
                     <textarea rows={6} placeholder='Enter your message' name='message' id='msg'/>
                     {/* <HCaptcha
-                        sitekey="ES_5fdb5a2d33734997b53784c4f3fbae8f"
+                        sitekey='key'
                         onLoad={onLoad}
                         onVerify={setToken}
                         ref={captchaRef}
