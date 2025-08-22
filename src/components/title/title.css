@@ -1,0 +1,30 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    gap: 10px;
+
+}
+
+.title h1{
+    color: #000f3b;
+    font-size: 40px;
+}
+
+.title p{
+    color: #193887;
+    font-size: 25px;
+}
+
+/* media query */
+@media (max-width:550px) {
+    .title h1{
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 15px;
+    }
+
+}

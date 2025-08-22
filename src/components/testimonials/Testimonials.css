@@ -1,0 +1,134 @@
+
+.testimonials{
+    width: 90%;
+    margin: 80px auto;
+    position: relative;
+}
+
+
+.forward ,.backward{
+    position: absolute;
+    top:50%;
+    right:-50px;
+    transform: translateY(-50%);
+    background-color: #212ea0;
+    padding: 10px;
+    border-radius: 50%;
+    width: 45px;
+    cursor: pointer;
+}
+.backward {
+    left:-50px;
+    right: 0;
+}
+
+.slider{
+    margin: 0 30px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.slider ul{
+    display: flex;
+    width: 200%;
+    transition: 0.3s;
+}
+
+.slider ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.slide{
+    width: 100%;
+    padding: 25px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+}
+
+.slide .user-info{
+    display: flex;
+    gap: 15px;
+}
+
+.slide .user-info img{
+    width: 60px;
+    border-radius: 50%;
+    border: 4px solid #212ea0;
+}
+.slide .user-info .dest{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide .user-info .dest h1{
+    font-size: 20px;
+    color: #212ea0;
+}
+.slide .user-info .dest h2{
+    font-size: 17px;
+    color: #676767;
+}
+.slide p{
+    margin-top: 20px;
+    color: #676767;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+/* media query*/
+@media (max-width:767px){
+    .testimonials{
+        margin: 40px auto;
+    }
+    .slider ul li{
+        padding: 10px;
+    }
+    .slide{
+        padding: 20px;
+    }
+    
+    .slide .user-info{
+        display: flex;
+        gap: 15px;
+    }
+    .slide .user-info img{
+        width: 40px;
+    }
+    .slide .user-info .dest h1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:680px){
+    .forward ,.backward{
+        padding: 10px;
+        width: 40px;
+        right:-30px;
+    }
+    .backward {
+        left:-30px;
+    }
+    .slider ul{
+        width: 400%;
+    }
+    .slider ul li{
+        width: 100%;
+        padding: 20px;
+    }
+    .slide{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .slide .user-info img{
+        width: 60px;
+    }
+    .slide .user-info .dest h1{
+        font-size: 20px;
+    }
+}

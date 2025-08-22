@@ -1,0 +1,35 @@
+
+.landing-page{
+    background: linear-gradient(#08003ab3, #08003ab3), url('../../assets/hero.png');
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-page-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.landing-page h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.landing-page p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+}
+
+/* media query */
+
+@media (max-width:800px) {
+    .landing-page h1{
+        font-size: 40px;
+    }
+}

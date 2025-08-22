@@ -1,0 +1,101 @@
+.contact{
+    margin: 80px auto;
+    display: flex;
+    align-items: start;
+    width: 90%;
+}
+
+.col-left{
+    padding: 20px;
+    width: 100%;
+}
+
+.col-left h1{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.col-left h1 img{
+    width: 40px;
+    margin-left: 20px;
+}
+
+.col-left p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #676767;
+    display: flex;
+    align-items: center;
+}
+
+.col-left p img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.col-right{
+    padding: 20px;
+    width: 100%;
+}
+
+.col-right form{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-right form input{
+    margin-bottom: 20px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    padding-left: 20px;
+    background-color: #ebecfe;
+}
+
+.col-right form label{
+    color: #676767;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.col-right form textarea{
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    background-color: #ebecfe;
+}
+
+.col-right form button{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background-color: #212ea0;
+    padding: 15px 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.col-right form button img{
+    width: 30px;
+}
+
+.col-right span{
+    display: block;
+    margin: 20px 0;
+    color: #676767;
+}
+
+/* media query*/
+@media (max-width:580px){
+    .contact{
+        flex-direction: column;
+    }
+}
